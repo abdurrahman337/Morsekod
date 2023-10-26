@@ -21,6 +21,14 @@ public class TestMorseKod {
         Assert.assertEquals(expected,result);
     }
 
+    public void shouldNotTranslateMorseToEnglish() {
+        String result = MorsekodConverter.translateToEng("*--");
+        String expected = "W";
+        Assert.assertNotEquals(expected,result);
+    }
+
+
+
 
     @Test
     public void shouldNotTranslateEnglishToMorse() {
