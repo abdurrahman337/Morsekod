@@ -66,7 +66,7 @@ public class MorsekodConverter {
         StringBuilder morse = new StringBuilder();
         for (char c : text.toUpperCase().toCharArray()) {
             String code = TO_MORSE.get(c);
-            if (code != null) {   // o, den inte null eller space gör olika saker
+            if (code != null) {
                 morse.append(code).append(" ");
             } else if (c == ' ') {
                 morse.append("; ");
